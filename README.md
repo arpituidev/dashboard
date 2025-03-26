@@ -15,3 +15,10 @@ bun dev
 ```
 
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+
+## Tech Stack
+
+- **Next JS**
+- **Tailwind**
+- **Redux Toolkit**
+- **Redux Toolkit Query**
