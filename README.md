@@ -16,6 +16,8 @@ bun dev
 
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
+![Demo](https://github.com/arpituidev/dashboard/blob/main/dashboard-demo.mov "Demo")
+
 ## Tech Stack
 
 - **Next JS**
