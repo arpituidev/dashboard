@@ -6,6 +6,7 @@ import helmet from "helmet";
 import bodyParser from "body-parser";
 /* ROUTE IMPORTS */
 import dashboardRoutes from "./routes/dashboardRoutes";
+import productsRoutes from "./routes/productsRoutes";
 
 /* CONFIGURATIONS */
 dotenv.config();
@@ -20,6 +21,7 @@ app.use(cors());
 
 /* ROUTES */
 app.use("/dashboard", dashboardRoutes); // https://localhost:8000/dashboard
+app.use("/products", productsRoutes); // https://localhost:8000/products
 
 /* SERVER */
 const port = process.env.PORT || 3001;
