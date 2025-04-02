@@ -1,3 +1,5 @@
+"use client";
+
 import { useGetDashboardMetricsQuery } from "@/state/api";
 import { TrendingDown, TrendingUp } from "lucide-react";
 import numeral from "numeral";
@@ -21,7 +23,7 @@ const PurchaseSummaryCard = (props: Props) => {
   // const
 
   return (
-    <div className="flex flex-col justify-between row-span-2 xl:row-span-3 col-span-1 md:col-span-2 xl:col-span-1 bg-white shadow-md rounded-2xl pb-16">
+    <div className="flex flex-col overflow-scroll justify-between row-span-2 xl:row-span-3 col-span-1 md:col-span-2 xl:col-span-1 bg-white shadow-md rounded-2xl pb-16">
       {isLoading ? (
         <div className="m-5">Loading...</div>
       ) : (
@@ -31,6 +33,7 @@ const PurchaseSummaryCard = (props: Props) => {
             <h2 className="text-lg font-semibold mb-2 px-7 pt-5">
               Purchase Summary
             </h2>
+            <hr />
           </div>
           {/* BODY HEADER */}
           <div>
@@ -64,7 +67,7 @@ const PurchaseSummaryCard = (props: Props) => {
             <ResponsiveContainer width={"100%"} height={200}>
               <AreaChart
                 data={purchaseData}
-                margin={{ top: 0, right: 0, left: -50, bottom: 45 }}
+                margin={{ top: 0, right: 0, left: -50, bottom: 0 }}
               >
                 <XAxis dataKey={"date"} tick={false} axisLine={false} />
                 <YAxis tickLine={false} tick={false} axisLine={false} />

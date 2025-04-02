@@ -29,10 +29,9 @@ export interface PurchaseSummary {
 }
 
 export interface ExpenseByCategorySummary {
-  expenseByCategoryId: string;
-  expenseSummaryId: string;
+  expenseByCategorySummaryId: string;
   category: string;
-  amount: number;
+  amount: string;
   date: string;
 }
 
@@ -41,7 +40,7 @@ export interface DashboardMetrics {
   saleSummary: SaleSummary[];
   purchaseSummary: PurchaseSummary[];
   expenseSummary: ExpenseSummary[];
-  expenseByCategorySummary: ExpenseByCategorySummary[];
+  expenseByCategory: ExpenseByCategorySummary[];
 }
 
 export const api = createApi({

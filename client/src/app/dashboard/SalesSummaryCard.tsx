@@ -1,3 +1,5 @@
+"use client";
+
 import { useGetDashboardMetricsQuery } from "@/state/api";
 import { TrendingUp } from "lucide-react";
 import React, { useState } from "react";
@@ -52,8 +54,10 @@ const SalesSummaryCard = (props: Props) => {
       ) : (
         <>
           {/* HEADER */}
-          <div className="text-lg font-semibold mb-2 px-7 pt-5">
-            <h2>Sales Summary</h2>
+          <div>
+            <h2 className="text-lg font-semibold mb-2 px-7 pt-5">
+              Sales Summary
+            </h2>
             <hr />
           </div>
 
